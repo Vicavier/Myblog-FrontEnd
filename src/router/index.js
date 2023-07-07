@@ -1,4 +1,4 @@
-import {createRouter} from "vue-router";
+import {createRouter, createWebHashHistory} from "vue-router";
 
 const routes = [
     //register and login
@@ -17,6 +17,7 @@ const routes = [
 ]
 
 const router = createRouter({
+    history: createWebHashHistory(),
     routes
 })
 
